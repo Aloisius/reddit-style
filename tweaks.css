@@ -1,4 +1,4 @@
-// Mark opinion links on r/politics
+/* Mark opinion links on r/politics */
 div.link[data-url*="opinion"][data-subreddit="politics"] div.entry p.title::before {
   content: "Opinion";
 
