@@ -1,13 +1,10 @@
-/* Mark opinion links on r/politics */
-div.link[data-url*="opinion"][data-subreddit="politics"] div.entry p.title::before {
-  content: "Opinion";
-
+/* Create generic flair style for ::before for r/politics that we'll overload later */
+div.link[data-subreddit="politics"] div.entry p.title::before {
   cursor: pointer;
   position: relative;
   display: block;
   float: left;
 
-  background-color: #f5f5c5;
   border: 1px solid rgba(0,0,0,.1);
   font-size: 75%;
   font-weight: bold;
@@ -17,3 +14,80 @@ div.link[data-url*="opinion"][data-subreddit="politics"] div.entry p.title::befo
   margin-right: .5em;
   padding: 0 10px;
 }
+
+
+/* Mark various orgs that have won Pultizers for Journalism since 1981 (excluding commentary & photography) */
+div.link[data-domain$="ap.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="postandcourier.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="theguardian.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="washingtonpost.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="philly.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="latimes.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="heraldcourier.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="lasvegassun.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="wsj.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="nola.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="sunherald.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="nytimes.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="bostonglobe.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="oregonlive.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="grandforksherald.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="newsobserver.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="virginislandsdailynews.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="ohio.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="miamiherald.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="sacbee.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="desmoinesregister.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="thewashingtondailynews.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="adn.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="charlotteobserver.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="post-gazette.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="denverpost.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="clarionledger.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="detroitnews.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="seattletimes.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="tuscaloosanews.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="nj.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="eagletribune.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="courant.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="newsday.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="mercurynews.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="courier-journal.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="montgomeryadvertiser.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="pilotonline.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="publicintegrity.org"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="heraldtribune.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="chicagotribune.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-url*="al.com/burmingham/"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="wweek.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="toledoblade.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="baltimoresun.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="ocregister.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="providencejournal.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="orlandosentinel.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="dallasnews.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="indystar.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="startribune.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="ajc.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="kentucky.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="tampabay.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="tucson.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="bloomberg.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="jsonline.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="greatfallstribune.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="daytondailynews.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="sandiegouniontribune.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="politifact.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="propublica.org"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="gazette.com"][data-subreddit="politics"] div.entry p.title::before {
+  content: "Pulitzer";
+  background-color: #b5c5f5;
+}
+
+
+/* Mark opinion links on r/politics */
+div.link[data-url*="opinion"][data-subreddit="politics"] div.entry p.title::before {
+  content: "Opinion";
+  background-color: #f5f5c5;
+}
+
