@@ -78,10 +78,14 @@ $pulitzer-urls: (
 }
 
 
-/* Fringe media: kooks, cranks, conspiracies, rumors, gossip, sensationlists, tabloid journalism, etc */
+/* Fringe media: kooks, cranks, conspiracies, rumors, gossip, sensationalism, tabloid journalism, etc */
 $fringe-domains: (
-  "breitbart.com"
-  "dailycaller.com"
+  "breitbart.com"                 // sensationalism, fringe conspiracy theories
+  "dailycaller.com"               // sensationalism, tabloid journalism
+  "infowars.com"                  // fringe conspiracy theories
+  "wnd.com"                       // fringe conspiracy theories, tabloid journalism
+  "globalresearch.ca"             // fringe conspiracy theories
+  "huffingtonpost.com"             // fringe conspiracy theories, sensationalism, tabloid journalism
 );
 
 %fringe {
@@ -123,6 +127,7 @@ div.link[data-subreddit="politics"], div.link[data-subreddit="news"] {
     }
   }
 
+  // Override previous for opinion articles
   &[data-url*="/opinion"] div.entry p.title::before {
     content: "Opinion";
     background-color: #f5f5c5;
