@@ -101,6 +101,16 @@ $fringe-domains: (
   background-color: #f5c5b5;
 }
 
+/* Anyone source with a strict ideological agenda, effectively propaganda networks */
+$ideologues-domains: (
+  "cnsnews.com"                   // christian conservative, fundamentalist christian, creationism, global warming denialist
+);
+
+%ideologues {
+  content: "Ideologues";
+  background-color: #c5f5b5;
+}
+
 div.link[data-subreddit="politics"], div.link[data-subreddit="news"] {
   div.entry p.title::before {
     cursor: pointer;
@@ -127,6 +137,11 @@ div.link[data-subreddit="politics"], div.link[data-subreddit="news"] {
   @each $item in $pulitzer-urls {
     &[data-url*="#{$item}"] div.entry p.title::before {
       @extend %pulitzer;
+    }
+  }
+  @each $item in $ideologues-domains {
+    &[data-domain$="#{$item}"] div.entry p.title::before {
+      @extend %ideologues;
     }
   }
   @each $item in $fringe-domains {

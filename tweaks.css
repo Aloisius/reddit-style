@@ -8,6 +8,11 @@ div.link[data-subreddit="politics"][data-domain$="breitbart.com"] div.entry p.ti
   content: "Fringe";
   background-color: #f5c5b5; }
 
+/* Anyone source with a strict ideological agenda, effectively propaganda networks */
+div.link[data-subreddit="politics"][data-domain$="cnsnews.com"] div.entry p.title::before, div.link[data-subreddit="news"][data-domain$="cnsnews.com"] div.entry p.title::before {
+  content: "Ideologues";
+  background-color: #c5f5b5; }
+
 div.link[data-subreddit="politics"] div.entry p.title::before, div.link[data-subreddit="news"] div.entry p.title::before {
   cursor: pointer;
   position: relative;
