@@ -84,10 +84,18 @@ div.link[data-domain$="gazette.com"][data-subreddit="politics"] div.entry p.titl
   background-color: #b5c5f5;
 }
 
+/* Fringe media: kooks, cranks, conspiracies, rumors, gossip, sensationlists, tabloid journalism, etc */
+div.link[data-domain$="breitbart.com"][data-subreddit="politics"] div.entry p.title::before,
+div.link[data-domain$="dailycaller.com"][data-subreddit="politics"] div.entry p.title::before {
+  content: "Fringe";
+  background-color: #f5c5b5;
+}
+
 
 /* Mark opinion links on r/politics */
 div.link[data-url*="opinion"][data-subreddit="politics"] div.entry p.title::before {
   content: "Opinion";
   background-color: #f5f5c5;
 }
+
 
