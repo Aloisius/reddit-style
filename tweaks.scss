@@ -175,6 +175,7 @@ div.link[data-subreddit="politics"], div.link[data-subreddit="news"] {
       @extend %#{$category};
     }
 
+    /*
     &[data-domain$="#{$key}"] div.entry p.title:hover::before {
       @if str-length($reason) > 0 {
         content: $reason;
@@ -183,6 +184,7 @@ div.link[data-subreddit="politics"], div.link[data-subreddit="news"] {
         @extend %#{$category}-hover;
       }
     }
+    */
   }
 
   @each $key, $value in $url-fragments {
@@ -192,6 +194,7 @@ div.link[data-subreddit="politics"], div.link[data-subreddit="news"] {
       @extend %#{$category};
     }
 
+    /*
     &[data-url*="#{$key}"] div.entry p.title:hover::before {
       @if str-length($reason) > 0 {
         content: $reason;
@@ -200,5 +203,6 @@ div.link[data-subreddit="politics"], div.link[data-subreddit="news"] {
         @extend %#{$category}-hover;
       }
     }
+    */
   }
 }
