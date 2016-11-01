@@ -175,7 +175,7 @@ div.link[data-subreddit="politics"], div.link[data-subreddit="news"] {
       @extend %#{$category};
     }
 
-    @if 0 {
+    @if null {
       &[data-domain$="#{$key}"] div.entry p.title:hover::before {
         @if str-length($reason) > 0 {
           content: $reason;
@@ -194,7 +194,7 @@ div.link[data-subreddit="politics"], div.link[data-subreddit="news"] {
       @extend %#{$category};
     }
 
-    @if 0 {
+    @if null {
       &[data-url*="#{$key}"] div.entry p.title:hover::before {
         @if str-length($reason) > 0 {
           content: $reason;
