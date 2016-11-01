@@ -1,0 +1,113 @@
+/* Mark various orgs that have won Pultizers for Journalism since 1981 (excluding commentary & photography) */
+$pulitzer-domains: (
+  "ap.com"
+  "postandcourier.com"
+  "theguardian.com"
+  "washingtonpost.com"
+  "ap.com"
+  "postandcourier.com"
+  "theguardian.com"
+  "washingtonpost.com"
+  "philly.com"
+  "latimes.com"
+  "heraldcourier.com"
+  "lasvegassun.com"
+  "wsj.com"
+  "nola.com"
+  "sunherald.com"
+  "nytimes.com"
+  "bostonglobe.com"
+  "oregonlive.com"
+  "grandforksherald.com"
+  "newsobserver.com"
+  "virginislandsdailynews.com"
+  "ohio.com"
+  "miamiherald.com"
+  "sacbee.com"
+  "desmoinesregister.com"
+  "thewashingtondailynews.com"
+  "adn.com"
+  "charlotteobserver.com"
+  "post-gazette.com"
+  "denverpost.com"
+  "clarionledger.com"
+  "detroitnews.com"
+  "seattletimes.com"
+  "tuscaloosanews.com"
+  "nj.com"
+  "eagletribune.com"
+  "courant.com"
+  "newsday.com"
+  "mercurynews.com"
+  "courier-journal.com"
+  "montgomeryadvertiser.com"
+  "pilotonline.com"
+  "publicintegrity.org"
+  "heraldtribune.com"
+  "chicagotribune.com"
+  "wweek.com"
+  "toledoblade.com"
+  "baltimoresun.com"
+  "ocregister.com"
+  "providencejournal.com"
+  "orlandosentinel.com"
+  "dallasnews.com"
+  "indystar.com"
+  "startribune.com"
+  "ajc.com"
+  "kentucky.com"
+  "tampabay.com"
+  "tucson.com"
+  "bloomberg.com"
+  "jsonline.com"
+  "greatfallstribune.com"
+  "daytondailynews.com"
+  "sandiegouniontribune.com"
+  "politifact.com"
+  "propublica.org"
+  "gazette.com"
+);
+
+$pulitzer-urls: (
+  "al.com/burmingham/"
+);
+
+%pulitzer {
+  content: "Pulitzer";
+  background-color: #b5c5f5;
+}
+
+
+/* Fringe media: kooks, cranks, conspiracies, rumors, gossip, sensationlists, tabloid journalism, etc */
+$fringe-domains: (
+  "breitbart.com"
+  "dailycaller.com"
+);
+
+%fringe {
+  content: "Fringe";
+  background-color: #f5c5b5;
+}
+
+div.link[data-subreddit="politics"], div.link[data-subreddit="news"] {
+  @each $item in $pulitzer-domains {
+    &[data-domain$="#{$item}"] div.entry p.title::before {
+      @extend %pulitzer;
+    }
+  }
+  @each $item in $pulitzer-urls {
+    &[data-url*="#{$item}"] div.entry p.title::before {
+      @extend %pulitzer;
+    }
+  }
+  @each $item in $fringe-domains {
+    &[data-domain$="#{$item}"] div.entry p.title::before {
+      @extend %fringe;
+    }
+  }
+
+  &[data-url*="/opinion"] div.entry p.title::before {
+    content: "Opinion";
+    background-color: #f5f5c5;
+  }
+}
