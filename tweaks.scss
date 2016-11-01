@@ -1,116 +1,155 @@
-/* Mark various orgs that have won Pultizers for Journalism since 1981 (excluding commentary & photography) */
-$pulitzer-domains: (
-  "ap.org"
-  "postandcourier.com"
-  "theguardian.com"
-  "washingtonpost.com"
-  "ap.com"
-  "postandcourier.com"
-  "theguardian.com"
-  "washingtonpost.com"
-  "philly.com"
-  "latimes.com"
-  "heraldcourier.com"
-  "lasvegassun.com"
-  "wsj.com"
-  "nola.com"
-  "sunherald.com"
-  "nytimes.com"
-  "bostonglobe.com"
-  "oregonlive.com"
-  "grandforksherald.com"
-  "newsobserver.com"
-  "virginislandsdailynews.com"
-  "ohio.com"
-  "miamiherald.com"
-  "sacbee.com"
-  "desmoinesregister.com"
-  "thewashingtondailynews.com"
-  "adn.com"
-  "charlotteobserver.com"
-  "post-gazette.com"
-  "denverpost.com"
-  "clarionledger.com"
-  "detroitnews.com"
-  "seattletimes.com"
-  "tuscaloosanews.com"
-  "nj.com"
-  "eagletribune.com"
-  "courant.com"
-  "newsday.com"
-  "mercurynews.com"
-  "courier-journal.com"
-  "montgomeryadvertiser.com"
-  "pilotonline.com"
-  "publicintegrity.org"
-  "heraldtribune.com"
-  "chicagotribune.com"
-  "wweek.com"
-  "toledoblade.com"
-  "baltimoresun.com"
-  "ocregister.com"
-  "providencejournal.com"
-  "orlandosentinel.com"
-  "dallasnews.com"
-  "indystar.com"
-  "startribune.com"
-  "ajc.com"
-  "kentucky.com"
-  "tampabay.com"
-  "tucson.com"
-  "bloomberg.com"
-  "jsonline.com"
-  "greatfallstribune.com"
-  "daytondailynews.com"
-  "sandiegouniontribune.com"
-  "politifact.com"
-  "propublica.org"
-  "gazette.com"
+/* The categories that domains are labeled with.
+
+   Format:
+
+   "template key": (
+      "label title",
+      background color,
+      "category description",
+   )
+*/
+$categories: (
+  "pulitzer": (
+    "Pulitzer",
+    #b5c5f5,
+    "Organizations who have won Pultizers for Journalism since 1981 (excluding commentary & photography)"
+  ),
+  "fringe": (
+    "Fringe",
+    #f5c5b5,
+    "Fringe media: kooks, cranks, conspiracies, rumors, gossip, sensationalism, tabloid journalism, etc",
+  ),
+  "ideologues": (
+    "Ideologues",
+    #c5f5b5,
+    "Organizations with a defined ideological agenda",
+  ),
+  "opinion": (
+    "Opinion",
+    #f5f5c5,
+    "Articles that appear to be opinion pieces",
+  ),
 );
 
-$pulitzer-urls: (
-  "al.com/burmingham/"
+/* These are domains to match
+
+  Format:
+
+  "domain": ("category", "reason")
+*/
+
+$domains: (
+  "ap.org": ("pulitzer", ""),
+  "postandcourier.com": ("pulitzer", ""),
+  "theguardian.com": ("pulitzer", ""),
+  "washingtonpost.com": ("pulitzer", ""),
+  "philly.com": ("pulitzer", ""),
+  "latimes.com": ("pulitzer", ""),
+  "heraldcourier.com": ("pulitzer", ""),
+  "lasvegassun.com": ("pulitzer", ""),
+  "wsj.com": ("pulitzer", ""),
+  "nola.com": ("pulitzer", ""),
+  "sunherald.com": ("pulitzer", ""),
+  "nytimes.com": ("pulitzer", ""),
+  "bostonglobe.com": ("pulitzer", ""),
+  "oregonlive.com": ("pulitzer", ""),
+  "grandforksherald.com": ("pulitzer", ""),
+  "newsobserver.com": ("pulitzer", ""),
+  "virginislandsdailynews.com": ("pulitzer", ""),
+  "ohio.com": ("pulitzer", ""),
+  "miamiherald.com": ("pulitzer", ""),
+  "sacbee.com": ("pulitzer", ""),
+  "desmoinesregister.com": ("pulitzer", ""),
+  "thewashingtondailynews.com": ("pulitzer", ""),
+  "adn.com": ("pulitzer", ""),
+  "charlotteobserver.com": ("pulitzer", ""),
+  "post-gazette.com": ("pulitzer", ""),
+  "denverpost.com": ("pulitzer", ""),
+  "clarionledger.com": ("pulitzer", ""),
+  "detroitnews.com": ("pulitzer", ""),
+  "seattletimes.com": ("pulitzer", ""),
+  "tuscaloosanews.com": ("pulitzer", ""),
+  "nj.com": ("pulitzer", ""),
+  "eagletribune.com": ("pulitzer", ""),
+  "courant.com": ("pulitzer", ""),
+  "newsday.com": ("pulitzer", ""),
+  "mercurynews.com": ("pulitzer", ""),
+  "courier-journal.com": ("pulitzer", ""),
+  "montgomeryadvertiser.com": ("pulitzer", ""),
+  "pilotonline.com": ("pulitzer", ""),
+  "publicintegrity.org": ("pulitzer", ""),
+  "heraldtribune.com": ("pulitzer", ""),
+  "chicagotribune.com": ("pulitzer", ""),
+  "wweek.com": ("pulitzer", ""),
+  "toledoblade.com": ("pulitzer", ""),
+  "baltimoresun.com": ("pulitzer", ""),
+  "ocregister.com": ("pulitzer", ""),
+  "providencejournal.com": ("pulitzer", ""),
+  "orlandosentinel.com": ("pulitzer", ""),
+  "dallasnews.com": ("pulitzer", ""),
+  "indystar.com": ("pulitzer", ""),
+  "startribune.com": ("pulitzer", ""),
+  "ajc.com": ("pulitzer", ""),
+  "kentucky.com": ("pulitzer", ""),
+  "tampabay.com": ("pulitzer", ""),
+  "tucson.com": ("pulitzer", ""),
+  "bloomberg.com": ("pulitzer", ""),
+  "jsonline.com": ("pulitzer", ""),
+  "greatfallstribune.com": ("pulitzer", ""),
+  "daytondailynews.com": ("pulitzer", ""),
+  "sandiegouniontribune.com": ("pulitzer", ""),
+  "politifact.com": ("pulitzer", ""),
+  "propublica.org": ("pulitzer", ""),
+  "gazette.com": ("pulitzer", ""),
+
+  "breitbart.com": ("fringe", "sensationalism, fringe conspiracy theories"),
+  "dailycaller.com": ("fringe", "sensationalism, tabloid journalism"),
+  "infowars.com": ("fringe", "fringe conspiracy theories"),
+  "wnd.com": ("fringe", "fringe conspiracy theories, tabloid journalism"),
+  "globalresearch.ca": ("fringe", "fringe conspiracy theories"),
+  "huffingtonpost.com": ("fringe", "fringe conspiracy theories, sensationalism, tabloid journalism"),
+  "rt.com": ("fringe", "fringe conspiracy theories"),
+  "NaturalNews.com": ("fringe", "fringe conspiracy theories"),
+  "Pravda.ru": ("fringe", "fringe conspiracy theories"),
+  "sputniknews.com": ("fringe", "fringe conspiracy theories"),
+  "dailymail.co.uk": ("fringe", "tabloid journalism"),
+  "nypost.com": ("fringe", "tabloid journalism"),
+  "nationalenquirer.com": ("fringe", "fringe conspiracy theories, tabloid journalism"),
+  "thesun.co.uk": ("fringe", "tabloid journalism"),
+
+  "cnsnews.com": ("ideologues", "christian conservative, fundamentalist christian, creationism, global warming denialist"),
 );
 
-%pulitzer {
-  content: "Pulitzer";
-  background-color: #b5c5f5;
+/* These are url fragments using substring matching
+
+  Format:
+
+  "url-fragment": ("category", "reason")
+*/
+$url-fragments: (
+  "al.com/burmingham/": ("pulitzer", ""),
+
+  "/opinion": ("opinion", "")
+);
+
+
+/* Build category templates */
+@each $key, $value in $categories {
+  $label: nth($value, 1);
+  $color: nth($value, 2);
+  $description: nth($value, 3);
+
+  %#{$key} {
+    content: "#{$label}";
+    background-color: #{$color};
+  }
+
+  %#{$key}-hover {
+    content: "#{$description}";
+  }
 }
 
-
-/* Fringe media: kooks, cranks, conspiracies, rumors, gossip, sensationalism, tabloid journalism, etc */
-$fringe-domains: (
-  "breitbart.com"                 // sensationalism, fringe conspiracy theories
-  "dailycaller.com"               // sensationalism, tabloid journalism
-  "infowars.com"                  // fringe conspiracy theories
-  "wnd.com"                       // fringe conspiracy theories, tabloid journalism
-  "globalresearch.ca"             // fringe conspiracy theories
-  "huffingtonpost.com"            // fringe conspiracy theories, sensationalism, tabloid journalism
-  "rt.com"                        // fringe conspiracy theories
-  "NaturalNews.com"               // fringe conspiracy theories
-  "Pravda.ru"                     // fringe conspiracy theories
-  "sputniknews.com"               // fringe conspiracy theories
-  "dailymail.co.uk"               // tabloid journalism
-  "nypost.com"                    // tabloid journalism
-  "nationalenquirer.com"          // fringe conspiracy theories, tabloid journalism
-  "thesun.co.uk"                  // tabloid journalism
-);
-
-%fringe {
-  content: "Fringe";
-  background-color: #f5c5b5;
-}
-
-/* Anyone source with a strict ideological agenda, effectively propaganda networks */
-$ideologues-domains: (
-  "cnsnews.com"                   // christian conservative, fundamentalist christian, creationism, global warming denialist
-);
-
-%ideologues {
-  content: "Ideologues";
-  background-color: #c5f5b5;
-}
-
+/* Match /r/politics and /r/news for right now */
 div.link[data-subreddit="politics"], div.link[data-subreddit="news"] {
   div.entry p.title::before {
     cursor: pointer;
@@ -128,31 +167,38 @@ div.link[data-subreddit="politics"], div.link[data-subreddit="news"] {
     padding: 0 10px;
   }
 
+  @each $key, $value in $domains {
+    $category: nth($value, 1);
+    $reason: nth($value, 2);
 
-  @each $item in $pulitzer-domains {
-    &[data-domain$="#{$item}"] div.entry p.title::before {
-      @extend %pulitzer;
+    &[data-domain$="#{$key}"] div.entry p.title::before {
+      @extend %#{$category};
     }
-  }
-  @each $item in $pulitzer-urls {
-    &[data-url*="#{$item}"] div.entry p.title::before {
-      @extend %pulitzer;
-    }
-  }
-  @each $item in $ideologues-domains {
-    &[data-domain$="#{$item}"] div.entry p.title::before {
-      @extend %ideologues;
-    }
-  }
-  @each $item in $fringe-domains {
-    &[data-domain$="#{$item}"] div.entry p.title::before {
-      @extend %fringe;
+
+    &[data-domain$="#{$key}"] div.entry p.title:hover::before {
+      @if str-length($reason) > 0 {
+        content: $reason;
+      }
+      @if str-length($reason) == 0 {
+        @extend %#{$category}-hover;
+      }
     }
   }
 
-  // Override previous for opinion articles
-  &[data-url*="/opinion"] div.entry p.title::before {
-    content: "Opinion";
-    background-color: #f5f5c5;
+  @each $key, $value in $url-fragments {
+    $category: nth($value, 1);
+    $reason: nth($value, 2);
+    &[data-url*="#{$key}"] div.entry p.title::before {
+      @extend %#{$category};
+    }
+
+    &[data-url*="#{$key}"] div.entry p.title:hover::before {
+      @if str-length($reason) > 0 {
+        content: $reason;
+      }
+      @if str-length($reason) == 0 {
+        @extend %#{$category}-hover;
+      }
+    }
   }
 }
