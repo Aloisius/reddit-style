@@ -22,7 +22,7 @@ $categories: (
   "ideologues": (
     "Ideologues",
     #c5f5b5,
-    "Organizations with a defined ideological agenda",
+    "Organizations with a defined ideological agenda that manipulate facts beyond reason",
   ),
   "opinion": (
     "Opinion",
@@ -124,7 +124,7 @@ $domains: (
   "madworldnews.com": ("fringe", "Tabloid journalism, sensationalism"),
 
 
-  "cnsnews.com": ("ideologues", "christian conservative, fundamentalist christian, creationism, global warming denialism"),
+  "cnsnews.com": ("ideologues", "Ideology: Fundamentalist Christian Conservative, creationism, global warming denialism"),
 );
 
 /* These are url fragments using substring matching
@@ -136,7 +136,8 @@ $domains: (
 $url-fragments: (
   "al.com/burmingham/": ("pulitzer", ""),
 
-  "/opinion": ("opinion", "")
+  "/opinion": ("opinion", ""),
+  "theguardian.com/commentisfree/": ("opinion", "")
 );
 
 
