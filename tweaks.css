@@ -33,7 +33,7 @@ div.link[data-subreddit="politics"][data-domain$="cnsnews.com"] div.entry p.titl
   content: "Ideologues";
   background-color: #c5f5b5; }
 
-div.link[data-subreddit="politics"][data-url*="/opinion"] div.entry p.title::before, div.link[data-subreddit="news"][data-url*="/opinion"] div.entry p.title::before, div.link[data-subreddit="politics"][data-url*="theguardian.com/commentisfree/"] div.entry p.title::before, div.link[data-subreddit="news"][data-url*="theguardian.com/commentisfree/"] div.entry p.title::before {
+div.link[data-subreddit="politics"][data-url*="/opinion"] div.entry p.title::before, div.link[data-subreddit="news"][data-url*="/opinion"] div.entry p.title::before, div.link[data-subreddit="politics"][data-url*="theguardian.com/commentisfree/"] div.entry p.title::before, div.link[data-subreddit="news"][data-url*="theguardian.com/commentisfree/"] div.entry p.title::before, div.link[data-subreddit="politics"][data-url*="thehill.com/blogs/pundits-blog/"] div.entry p.title::before, div.link[data-subreddit="news"][data-url*="thehill.com/blogs/pundits-blog/"] div.entry p.title::before {
   content: "Opinion";
   background-color: #f5f5c5; }
 
