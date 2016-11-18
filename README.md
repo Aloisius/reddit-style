@@ -2,14 +2,15 @@
 
 ![](screenshot.png?raw=true)
 
-This was created in order to better judge whether an article should be trusted based on the 
-reputation of the news source.
+This was created in order to better judge whether an article should be 
+trusted based on the reputation of the news source.
 
-This adds a label to links on Reddit's r/politics and r/news indicating if a site is:
+This adds a label to links on Reddit if the site is:
 
 * A Pulitzer prize winner for Journalism since 1981 (excluding commentary & photography)
-* Fringe media: kooks, cranks, conspiracies, rumors, gossip, sensationalism, tabloid journalism, etc.
+* Fringe media: kooks, cranks, conspiracies, rumors, gossip, sensationalism, tabloid journalism, fake news, propaganda, etc.
 * Ideologically driven organizations
+* Satire
 
 It also labels opinion articles to distinguish them from actual reporting.
 
