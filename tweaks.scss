@@ -130,6 +130,19 @@ $domains: (
 
   "uspolitico.com": ("fringe", "Sensationalism, tabloid journalism, seemingly fake news"),
 
+  /*
+    The American Revenant
+
+    Macedonia fake news site.
+
+    Silicon Valley Bends the Knee: Apple to Relocate iPhone Assembly to America
+    https://theamericanrevenant.com/2016/11/18/silicon-valley-bends-the-knee-apple-to-relocate-iphone-assembly-to-america/
+
+    60 Minutes Goes To Sweden To Show How Peaceful Refugees Are, Entire Crew Gets Assaulted By Refugees
+    https://theamericanrevenant.com/2016/11/18/60-minutes-goes-to-sweden-to-show-how-peaceful-refugees-are-entire-crew-gets-assaulted-by-refugees/
+  */
+  "theamericanrevenant.com": ("fringe", "Tabloid journalism, fake news"),
+
   // Fake news sites from Snopes - http://www.snopes.com/2016/01/14/fake-news-sites/
   "nationalreport.net": ("fringe", "Fake news (snopes)"),
   "worldnewsdailyreport.com": ("fringe", "Fake news (snopes)"),
@@ -141,12 +154,9 @@ $domains: (
   "newswatch33.com": ("fringe", "Fake news (snopes)"),
   "nahadaily.com": ("fringe", "Fake news (snopes)"),
   "thestatelyharold.com": ("fringe", "Fake news (snopes)"),
-  // NewsBuzzDaily (can't find)
   "now8news.com": ("fringe", "Fake news (snopes)"),
   "reporter.bz": ("fringe", "Fake news (snopes)"),
   "empireherald.com": ("fringe", "Fake news (snopes)"),
-  "satiratribune.com": ("satire", "Fake news (snopes)"),
-  "ncscooper.com": ("satire", "Fake news (snopes)"),
   "associatedmediacoverage.com": ("fringe", "Fake news (snopes)"),
 
 
@@ -174,53 +184,33 @@ $domains: (
   "PrisonPlanet.tv": ("fringe", "Zidmar's fake news list"),
   "AnonNews.co": ("fringe", "Zidmar's fake news list"),
   "HangTheBankers.com": ("fringe", "Zidmar's fake news list"),
-  // "Private-eye.co.uk (includes 4)": ("fringe", "Zidmar's fake news list"),
   "Associated Media Coverage": ("fringe", "Zidmar's fake news list"),
   "HumansAreFree.com": ("fringe", "Zidmar's fake news list"),
   "ProjectVeritas.com": ("fringe", "Zidmar's fake news list"),
   "BeforeItsNews.com": ("fringe", "Zidmar's fake news list"),
-  //"Being Liberal": ("fringe", "Zidmar's fake news list"), - no domain
-  //"IfYouOnlyNews": ("fringe", "Zidmar's fake news list"), - no domain
-  //"React 365": ("fringe", "Zidmar's fake news list"), - no domain
   "BigAmericanNews.com": ("fringe", "Zidmar's fake news list"),
-  // "Indecision Forever (1)": ("fringe", "Zidmar's fake news list"), - no domain
   "RealFarmacy.com": ("fringe", "Zidmar's fake news list"),
   "BigPZone.com": ("fringe", "Zidmar's fake news list"),
-  "ijr.com": ("fringe", "Zidmar's fake news list"),
   "RealNewsRightNow.com": ("fringe", "Zidmar's fake news list"),
   "bipartisanreport.com": ("fringe", "Zidmar's fake news list"),
   "redflagnews.com": ("fringe", "Conspiracy theories, sensationalism (Zidmar's)"),
   "bizpacreview.com": ("fringe", "Zidmar's fake news list"),
-  //"redstate.com": ("fringe", "Zidmar's fake news list"), - opinion
   "bluenationreview.com": ("fringe", "Zidmar's fake news list"),
   "IntelliHub.com": ("fringe", "Zidmar's fake news list"),
-  //"Reductress (4)": ("fringe", "Zidmar's fake news list"),
-  //"Inquisitr.com": ("fringe", "Zidmar's fake news list"), - don't see fake news
   "RileNews.com": ("fringe", "Zidmar's fake news list"),
-  //"callthecops.net (4)": ("fringe", "Zidmar's fake news list"),
   "JonesReport.com": ("fringe", "Zidmar's fake news list"),
-  //"cap-news.com  (4)": ("fringe", "Zidmar's fake news list"),
   "LewRockwell.com": ("fringe", "Zidmar's fake news list"),
-  //"Sprotspickle.com (4)": ("fringe", "Zidmar's fake news list"),
-  //"ChristWire.org (4)": ("fringe", "Zidmar's fake news list"),
-  //"Liberal America": ("fringe", "Zidmar's fake news list"), - no domain
-  //"TheBlaze.com": ("fringe", "Zidmar's fake news list"), - maybe tabloid, investigate later
   "Chronicle.su": ("fringe", "Zidmar's fake news list"),
   "LibertyTalk.fm": ("fringe", "Zidmar's fake news list"),
-  //"The Free Thought Project (3)": ("fringe", "Zidmar's fake news list"), - no domain
   "CivicTribune.com": ("fringe", "Zidmar's fake news list"),
   "libertyunyielding.com": ("fringe", "Zidmar's fake news list"),
-  //"Borowitz Report (4)": ("fringe", "Zidmar's fake news list"),
-  //"ClickHole.com (4)": ("fringe", "Zidmar's fake news list"),
   "LibertyVideos.org": ("fringe", "Zidmar's fake news list"),
-  "theonion.com": ("satire", "Zidmar's fake news list"),
   "CoastToCoastAM.com": ("fringe", "Zidmar's fake news list"),
   "LibertyMovementRadio.com": ("fringe", "Zidmar's fake news list"),
   "other98.com": ("fringe", "Zidmar's fake news list"),
   "collective-evolution.com": ("fringe", "Zidmar's fake news list"),
   "MediaMass.net": ("fringe", "Zidmar's fake news list"),
   "ConsciousLifeNews.com": ("fringe", "Zidmar's fake news list"),
-  //"MegynKelly.us": ("fringe", "Zidmar's fake news list"), - doesn't appear to exist
   "ConservativeOutfitters.com": ("fringe", "Zidmar's fake news list"),
   "MSNBC.com.co": ("fringe", "Zidmar's fake news list"),
   "TheDailySheeple.com": ("fringe", "Zidmar's fake news list"),
@@ -243,17 +233,13 @@ $domains: (
   "US.Blasting.News": ("fringe", "Zidmar's fake news list"),
   "DCClothesLine.com": ("fringe", "Zidmar's fake news list"),
   "NewsBiscuit.com": ("fringe", "Zidmar's fake news list"),
-  //"US Uncut (3)": ("fringe", "Zidmar's fake news list"), - no domain
   "DCGazette.com": ("fringe", "Zidmar's fake news list"),
-  //"Newslo (1, 4)": ("fringe", "Zidmar's fake news list"), - no domain
   "VeteransToday.com": ("fringe", "Zidmar's fake news list"),
   "DerfMagazine.com": ("fringe", "Zidmar's fake news list"),
   "NewsMutiny.com": ("fringe", "Zidmar's fake news list"),
   "disclose.tv": ("fringe", "Conspiracy theories (Zidmar's)"),
   "WakingUpWisconsin.com": ("fringe", "Zidmar's fake news list"),
   "DrudgeReport.com.co": ("fringe", "Zidmar's fake news list"),
-  //"Winning Democrats": ("fringe", "Zidmar's fake news list"), - no domain
-  //"DuffleBlog.com": ("satire", "Zidmar's fake news list"),
   "NewsWire-24.com": ("fringe", "Zidmar's fake news list"),
   "WitScience.org": ("fringe", "Zidmar's fake news list"),
   "DuhProgressive.com": ("fringe", "Zidmar's fake news list"),
@@ -262,7 +248,6 @@ $domains: (
   "NowTheEndBegins.com": ("fringe", "Zidmar's fake news list"),
   "WorldTruth.tv": ("fringe", "Zidmar's fake news list"),
   "occupydemocrats.com": ("fringe", "Zidmar's fake news list"),
-  //"ZeroHedge.com": ("fringe", "Zidmar's fake news list"), - not sure this is trying to be news
   "Endingthefed.com": ("fringe", "Zidmar's fake news list"),
 );
 
